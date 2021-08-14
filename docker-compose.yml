@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  go-task-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+
+networks:
+  default:
